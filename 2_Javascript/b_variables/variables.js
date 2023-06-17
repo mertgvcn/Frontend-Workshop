@@ -28,3 +28,11 @@ function method1() {
     ?         değişkenin değerini değiştiremiyorsun.
 
 */
+
+const user1 = {  //objenin yapısını değiştiremeyiz ama değişkenlerine yeni değer atayabiliriz.
+    username : "mert",
+    password : "1234"
+}
+
+user1.username = "yusuf mert"
+console.log(user)
