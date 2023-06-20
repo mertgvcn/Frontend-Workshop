@@ -12,7 +12,8 @@ let insan = {
 }
 
 //array - object sayılıyor, sadece köşeli parantez
-let rakamlar = [1,2,3,4]; 
+//arraylerde karışık değerler kullanılabiliyor.
+let rakamlar = [1,2,3,4, "mert"]; 
 
 
 //func
