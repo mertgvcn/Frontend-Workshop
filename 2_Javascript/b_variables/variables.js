@@ -4,7 +4,7 @@
     ? Block Scope    : Tanımlandığı statement'a özeldir
 */
 
-/*---------------------------------
+/*
 var a = 5; //global scope
 
 function method1() {
@@ -14,7 +14,9 @@ function method1() {
         let c = 2; //block scope 
     }
 }
-----------------------------------*/
+---------------------------------------------------------------------------*/
+
+
 
 /*
     ? var   : block scope özelliği yok, 
