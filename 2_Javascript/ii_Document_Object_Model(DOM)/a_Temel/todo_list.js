@@ -47,4 +47,4 @@ const todo_list_evens = Array.from(document.querySelectorAll("li:nth-child(even)
 todo_list_evens.forEach(function(todo) {
    todo.style.backgroundColor = "lightgrey"; //getAttribute yerinde direkt element.attribute şeklinde de çağırabiliyoruz.
 });
-
+//sonraki derste style kullanımı daha iyi anlaşılıyor
