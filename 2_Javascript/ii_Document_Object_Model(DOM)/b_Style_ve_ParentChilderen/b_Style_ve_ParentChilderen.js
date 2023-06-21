@@ -17,7 +17,7 @@ console.log(row);
 card_list = row.children[1];   //2. çocuğuna eriştik.
 container = row.parentElement; //parent'ı olan containera eriştik
 
-empty = row.nextSibling; //olsaydı bir sonraki kardeşine erişebilirdik
-empty2 = row.previousSibling; //olsaydı bir önceki kardeşine erişebilirdik
-empty3 = row.nextSibling.nextSibling.children[0]; //bu şekilde de kullanılabiliyor LinkedList gibi
+//empty = row.nextSibling; //olsaydı bir sonraki kardeşine erişebilirdik
+//empty2 = row.previousSibling; //olsaydı bir önceki kardeşine erişebilirdik
+//empty3 = row.nextSibling.nextSibling.children[0]; //bu şekilde de kullanılabiliyor LinkedList gibi
 
