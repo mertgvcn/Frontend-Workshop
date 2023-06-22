@@ -58,3 +58,15 @@ searchButton.remove();
 //buttons[1].remove();
 
 
+
+//!------------------------------------------- REPLACING AN ELEMENT ------------------------------------------
+
+//My to-do list yazan header'ı büyütüp değiştirelim
+const card_todos = document.querySelectorAll(".card")[1]; //değiştirmek istediğim şeyin atasını seçtim
+
+//<h5 class="card-header">My To-Do List</h5>
+const newTitle = document.createElement("h4");
+newTitle.className = "card-header";
+newTitle.textContent = "MY TODO LIST";
+
+card_todos.replaceChild(newTitle, card_todos.childNodes[1]); //yeni element, eski element(node tipinde yazmak gerek)
