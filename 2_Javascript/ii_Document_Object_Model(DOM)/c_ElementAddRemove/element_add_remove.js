@@ -1,6 +1,11 @@
+//!------------------------------------------  CREATING AN ELEMENT -------------------------------------------
+
+//* ORNEK 1 ************************************************************************************************** 
+// yeni buton ekleme
+
 const link = document.createElement("a");
 
-//*link özellikleri
+//link özellikleri
 link.id = "go_to_google"
 link.className = "btn btn-dark btn-sm mt-4";
 link.href = "https://www.google.com.tr";
@@ -15,20 +20,20 @@ const x = document.querySelector(".row");
 x.appendChild(link); //sona ekler
 
 
-//------------------------------------------------------------------------------------------------------------
-
-
-//aşağıdakini kullanarak yeni bir to do ekleyelim           
-//<li class="list-group-item">To Do 1 <a href="#" style="float:right; text-decoration: none;">x</a></li>
+//* ORNEK 2 ************************************************************************************************** 
+// yeni todo ekleme
 
 const new_todo = document.createElement("li");
 const todo_link = document.createElement("a"); //içindeki a etiketi
 
-//*new todo özellikleri
+//aşağıdakinden kopya çekebiliriz.
+//<li class="list-group-item">To Do 1 <a href="#" style="float:right; text-decoration: none;">x</a></li>
+
+//new todo özellikleri
 new_todo.className = "list-group-item";
 new_todo.innerHTML = "To Do 6";
 
-//*içindeki a etiketi özellikleri
+//içindeki a etiketi özellikleri
 todo_link.href = "#";
 todo_link.style.float = "right";
 todo_link.style.textDecoration = "none";
@@ -39,3 +44,17 @@ new_todo.appendChild(todo_link); //önce a yı li nin içine atıyorum
 //şimdi bu yapıyı tek olan ul etiketinin sonuna ekleyelim
 const todos = document.querySelector("ul");
 todos.appendChild(new_todo);
+
+
+
+//!------------------------------------------  REMOVING AN ELEMENT -------------------------------------------
+
+//Search Butonunu kaldıralım
+const searchButton = document.querySelector("#button-search-todo");
+searchButton.remove();
+
+//alternatif yöntem:
+//const buttons = document.querySelectorAll(".btn");
+//buttons[1].remove();
+
+
