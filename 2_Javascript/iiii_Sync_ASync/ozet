@@ -1,0 +1,18 @@
+Synchron  : Sirayla çalişan işlemler 
+Asynchron : Eş zamanli çalişan işlemler
+
+
+JS Senkron çalişir.
+
+Asenkron çalişmasina sebep olan durumlar:
+1-Timing
+2-Events
+3-HTTP istekler
+    a.XMLHttpRequest (AJAX)
+    b.Fetch API
+    c.Axios (reactta kullaniliyor)
+
+Asenkronu yönetmek için:
+1-Callback    (ES6 Öncesi)
+2-Promise     (ES6)
+3-Async await (ES7?)
