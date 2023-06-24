@@ -1,0 +1,59 @@
+.form-wrapper {
+    display: flex; /* default "flex-direction: row;" olarak geliyor */
+    flex-direction: column; /*form wrapper'ın çocuklarını alt alta sıraladık*/
+    width: 100%;
+    margin: 20px 0px; /*üst-alt, sağ-sol margin ayarladık*/
+}
+
+#form {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /*column için align-items, row için justify-content kullanıyoruz*/
+}
+
+#input_search {
+    width: 75%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-wrapper {
+    margin: 10px 0px;
+}
+
+#button_search {
+    width: 110px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: #464646;
+    color: #fff;
+    box-shadow: 1px 3px 5px lightgrey;
+}
+
+#button_clear {
+    width: 110px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: #cc3838;
+    color: #fff;
+    box-shadow: 1px 3px 5px lightgrey;
+}
+
+.images-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.images-wrapper > .card{
+    margin:20px;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 8px grey;
+}
